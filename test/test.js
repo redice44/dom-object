@@ -21,3 +21,7 @@ results.insertAfter(node);
 results.get('ul > li').append(text);
 results.get('ul > li', { index: 2 }).append(text2);
 results.get('ul > li', { index: [1, 2, 3] }).append(new Domo('p {baz}'));
+
+console.log(results.get('ul > li', { index: 2 }).remove());
+results.remove('ul > li', { index: 2 });
+// console.log(results);
