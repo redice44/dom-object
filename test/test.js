@@ -14,6 +14,10 @@ var text2 = new Domo('p {bar}');
 console.log(node);
 // heading('Creation String Single', results);
 results.insertAfter(node);
-results.insertAfter(text, 'ul > li');
-results.insertAfter(text2, 'ul > li', { index: 2 });
-results.insertAfter(new Domo('p {baz}'), 'ul > li', { index: [1, 2, 3] });
+// results.insertAfter(text, 'ul > li');
+// results.insertAfter(text2, 'ul > li', { index: 2 });
+// results.insertAfter(new Domo('p {baz}'), 'ul > li', { index: [1, 2, 3] });
+
+results.get('ul > li').append(text);
+results.get('ul > li', { index: 2 }).append(text2);
+results.get('ul > li', { index: [1, 2, 3] }).append(new Domo('p {baz}'));
