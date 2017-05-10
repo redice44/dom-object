@@ -11,7 +11,7 @@
   "author": "Matt Thomson <red.cataclysm@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "emmet-parser": "https://github.com/redice44/emmet-parser.git#3a11c56"
+    "emmet-parser": "https://github.com/redice44/emmet-parser#v0.0.1"
   },
   "devDependencies": {
     "webpack": "^2.4.1"
