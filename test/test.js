@@ -22,3 +22,5 @@ results.get('ul > li').append(text);
 results.get('ul > li', { index: 2 }).append(text2);
 results.get('ul > li', { index: [1, 2, 3] }).append(new Domo('{baz}'));
 results.get('ul > li', { index: 0 }).prepend(new Domo('{Pre-}'));
+results.get('ul > li', { index: [1, 4] }).insertAfter(new Domo('li {Inserted After}'));
+results.get('ul > li', { index: [2, 6] }).insertBefore(new Domo('li {Inserted Before}'));

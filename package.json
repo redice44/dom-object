@@ -2,7 +2,7 @@
   "name": "dom-object",
   "version": "0.0.1",
   "description": "Lightweight DOM Object",
-  "main": "index.js",
+  "main": "lib/DOMObject.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "dev": "webpack --config webpack.config.js --watch",
@@ -11,7 +11,7 @@
   "author": "Matt Thomson <red.cataclysm@gmail.com>",
   "license": "GPL-3.0",
   "dependencies": {
-    "emmet-parser": "https://github.com/redice44/emmet-parser#v0.0.1"
+    "emmet-parser": "https://github.com/redice44/emmet-parser#v0.0.2"
   },
   "devDependencies": {
     "webpack": "^2.4.1"
