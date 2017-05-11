@@ -24,6 +24,7 @@ results1.toggleClass(['foo', 'bar'], 'ul > li', { index: 1 }).toggleClass('foo')
 results1.toggleClass(['blue', 'green'], 'ul > li', { index: 3 });
 results1.setAttr({ id: 'foo' }, 'ul > li', { index: 3 }).setStyle({ color: 'blue' });
 results1.setStyle({ color: 'red' }, 'ul > li', { index: 4}).setAttr({ id: 'bar'});
+results1.append('ol > li {hi} * 3');
 
 results2.append(new Domo('div > ul > li * 5'));
 results2.get('ul > li').append(new Domo('{foo}'));
@@ -41,3 +42,4 @@ results2.get('ul > li', { index: 1 }).toggleClass(['foo', 'bar']).toggleClass('f
 results2.get('ul > li', { index: 3 }).toggleClass(['blue', 'green']);
 results2.get('ul > li', { index: 3 }).setStyle({ color: 'blue' }).setAttr({ id: 'foo' });
 results2.get('ul > li', { index: 4 }).setAttr({ id: 'bar' }).setStyle({ color: 'red' });
+
