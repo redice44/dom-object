@@ -58,6 +58,19 @@ console.log(
 results1.append('div > input * 5')
   .setAttr({ type: 'checkbox' }, 'input', { index: [0, 2, 4] })
   .setAttr({ checked: true }, '', { index: [0, 2] })
+  .setAttr({ disabled: true }, '', { index: 0 })
 );
 
+
+results2.append('div > input * 5')
+  .setAttr({ type: 'checkbox' }, 'input', { index: [0, 2, 4] })
+  .get('', { index: [0, 2] }).checked = [true, false];
+
+results2.get('div > input', { index: [0, 1, 2] }).disabled = [true, false, true];
+
+results2.append('div > input * 6').get('input').value = ['hello', 'world', 'this', 'is', 'a', 'test'];
+
+results2.append('div > input * 5').get('input').value = 'foo';
+
+// results2.append('input * 3').value = 'bar';
 
