@@ -1,11 +1,5 @@
 import Domo from 'DOMObject';
 
-// function heading (title, results) {
-//   var h1 = document.createElement('h1');
-//   h1.appendChild(document.createTextNode(title));
-//   results.appendChild(h1);
-// }
-
 var results1 = new Domo(document.getElementById('results1'));
 var results2 = new Domo(document.getElementById('results2'));
 
@@ -52,15 +46,12 @@ console.log(results1.get('ul > li').html);
 console.log(results1.get('ul > li').id);
 console.log(results1.get('ul > li').classes);
 
-
-
 console.log(
 results1.append('div > input * 5')
   .setAttr({ type: 'checkbox' }, 'input', { index: [0, 2, 4] })
   .setAttr({ checked: true }, '', { index: [0, 2] })
   .setAttr({ disabled: true }, '', { index: 0 })
 );
-
 
 results2.append('div > input * 5')
   .setAttr({ type: 'checkbox' }, 'input', { index: [0, 2, 4] })
@@ -72,5 +63,4 @@ results2.append('div > input * 6').get('input').value = ['hello', 'world', 'this
 
 results2.append('div > input * 5').get('input').value = 'foo';
 
-// results2.append('input * 3').value = 'bar';
-
+results2.append('input * 3').value = 'bar';
