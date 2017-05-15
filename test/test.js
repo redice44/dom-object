@@ -26,6 +26,7 @@ results1.setAttr({ id: 'foo' }, 'ul > li', { index: 3 }).setStyle({ color: 'blue
 results1.setStyle({ color: 'red' }, 'ul > li', { index: 4}).setAttr({ id: 'bar'});
 results1.append('ol > li {hi} * 3');
 
+
 results2.append(new Domo('div > ul > li * 5'));
 results2.get('ul > li').append(new Domo('{foo}'));
 results2.get('ul > li', { index: 2 }).append(new Domo('{bar}'));
@@ -42,4 +43,21 @@ results2.get('ul > li', { index: 1 }).toggleClass(['foo', 'bar']).toggleClass('f
 results2.get('ul > li', { index: 3 }).toggleClass(['blue', 'green']);
 results2.get('ul > li', { index: 3 }).setStyle({ color: 'blue' }).setAttr({ id: 'foo' });
 results2.get('ul > li', { index: 4 }).setAttr({ id: 'bar' }).setStyle({ color: 'red' });
+
+console.log(results1.html);
+console.log(results1.id);
+console.log(results1.getAttr('id'));
+console.log(results1.classes);
+console.log(results1.get('ul > li').html);
+console.log(results1.get('ul > li').id);
+console.log(results1.get('ul > li').classes);
+
+
+
+console.log(
+results1.append('div > input * 5')
+  .setAttr({ type: 'checkbox' }, 'input', { index: [0, 2, 4] })
+  .setAttr({ checked: true }, '', { index: [0, 2] })
+);
+
 
