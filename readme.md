@@ -1,7 +1,10 @@
 # DOM Object
 
+### Version 0.0.4
 
-### Update 3 (v0.0.3)
+- Removed Unnecessary document and DOMParser references.
+
+### Version 0.0.3 - Accessors Release
 
 - Direct accessors to:
   - [Read Only] HTML
@@ -11,11 +14,11 @@
   - [Read and Write] checked attribute
   - [Read and Write] disabled attribute
 
-### Update 2 (v0.0.2): Bug Fix
+### Version 0.0.2
 
 - Fixed references 
 
-### Update 1 (v0.0.1): Intial Alpha Release
+### Version 0.0.1 - Intial Alpha Release
 
 - Creation of DOM Object through [Emmet](https://emmet.io/) styled strings.
 - Append and Prepend DOM Objects

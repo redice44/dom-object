@@ -47,7 +47,7 @@ console.log(results1.get('ul > li').id);
 console.log(results1.get('ul > li').classes);
 
 console.log(
-results1.append('div > input * 5')
+results1.append('div#inputfoo > input * 5')
   .setAttr({ type: 'checkbox' }, 'input', { index: [0, 2, 4] })
   .setAttr({ checked: true }, '', { index: [0, 2] })
   .setAttr({ disabled: true }, '', { index: 0 })
@@ -59,8 +59,28 @@ results2.append('div > input * 5')
 
 results2.get('div > input', { index: [0, 1, 2] }).disabled = [true, false, true];
 
-results2.append('div > input * 6').get('input').value = ['hello', 'world', 'this', 'is', 'a', 'test'];
+results2.append('div#miscinput > input * 6').get('input').value = ['hello', 'world', 'this', 'is', 'a', 'test'];
 
 results2.append('div > input * 5').get('input').value = 'foo';
 
 results2.append('input * 3').value = 'bar';
+
+console.log(
+  results2.get('#miscinput > input').map(function (d) { return d.value })
+);
+
+console.log(
+  results2.get('#miscinput > input', { index: 1 }).map(function (d) { return d.value })
+);
+
+console.log(
+  results2.get('#miscinput > input', { index: [0, 2] }).map(function (d) { return d.value })
+);
+
+console.log(
+  results2.map(function (d) { return d.value }, '#miscinput > input', { index: [0, 2] })
+);
+
+console.log(
+  results2.map(function (d) { return d.html }, '#miscinput > input', { index: 2 })
+);
