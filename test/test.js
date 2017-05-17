@@ -84,3 +84,9 @@ console.log(
 console.log(
   results2.map(function (d) { return d.html }, '#miscinput > input', { index: 2 })
 );
+
+console.log('Should be true');
+console.log(Domo.isValid(results1));
+console.log('Should be false');
+console.log(Domo.isValid(null));
+console.log(Domo.cast('div'));

@@ -1,8 +1,14 @@
 # DOM Object
 
+### Version 0.0.5
+
+- Static method: isValid
+- Static method: Coerce to DOM Object
+
 ### Version 0.0.4
 
 - Removed Unnecessary document and DOMParser references.
+- Implements a version of map. 
 
 ### Version 0.0.3 - Accessors Release
 
