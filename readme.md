@@ -1,5 +1,9 @@
 # DOM Object
 
+### Version 0.0.5a - Bugfix
+
+- Fixes: 0.0.5 static methods
+
 ### Version 0.0.5
 
 - Static method: isValid
