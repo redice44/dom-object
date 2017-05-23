@@ -1,5 +1,10 @@
 # DOM Object
 
+### Version 0.0.6 - More array functions
+
+- forEach
+- filter
+
 ### Version 0.0.5a - Bugfix
 
 - Fixes: 0.0.5 static methods

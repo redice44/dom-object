@@ -86,7 +86,25 @@ console.log(
 );
 
 console.log('Should be true');
-console.log(Domo.isValid(results1));
+console.log(Domo.isA(results1));
 console.log('Should be false');
-console.log(Domo.isValid(null));
+console.log(Domo.isA(null));
 console.log(Domo.cast('div'));
+
+console.log(
+  results1.get('ul > li').filter(function (domo) {
+    return domo.id === 'foo';
+  })
+);
+
+console.log(
+  results1.get('ul > li').filter(function (domo) {
+    console.log(domo.classes);
+
+    if (!domo.classes) {
+      return false;
+    }
+    
+    return domo.classes.includes('foo');
+  })
+);
