@@ -1,5 +1,9 @@
 # DOM Object
 
+### Version 0.0.7
+
+- Handles null DOMObjects instead of throwing error. Provides null in a chain if nothing happens.
+
 ### Version 0.0.6 - More array functions
 
 - forEach

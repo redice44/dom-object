@@ -108,3 +108,11 @@ console.log(
     return domo.classes.includes('foo');
   })
 );
+
+console.log(
+  results1.get('ajsdfldsf')
+);
+
+console.log(
+  results1.get('ajsdfldsf').addClass('sdf')
+);
